@@ -8,9 +8,14 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "crypto": "^1.0.1",
+    "date-fns": "^2.8.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
     "mysql2": "^1.7.0",
+    "nodemailer": "^6.3.1",
+    "radis": "^1.0.5",
     "sequelize": "^5.19.8",
     "yup": "^0.27.0"
   },

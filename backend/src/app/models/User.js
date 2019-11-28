@@ -27,6 +27,14 @@ class User extends Model {
   checkPassword(password) {
     return bcrypt.compare(password, this.password_hash);
   }
+
+  /**
+   * Relacionando o model user com o meetuṕ
+   */
+  associate(models) {
+    this.hasMany(models.Meetup, { foreignKey: 'user_id', as: 'user' });
+    this.hasMany(models.Subscription, { foreignKey: 'user_id', as: 'user' });
+  }
 }
 
 export default User;
